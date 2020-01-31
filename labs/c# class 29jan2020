@@ -1,0 +1,23 @@
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DoALoop(10);
+        }
+        //count to 10
+        static void DoALoop(int iteration)
+        {
+            //base case
+            //feds the loop
+            if (iteration <= 0) return;
+            Console.WriteLine(iteration);
+            // inductive/incursive/recursive/alternative case
+            //must make progress towards the base case
+            DoALoop(iteration - 1);
+        }
+    }
+}

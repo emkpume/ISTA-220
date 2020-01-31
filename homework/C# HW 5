@@ -1,0 +1,88 @@
+# *Emeka Mkpume*
+
+## *C# HW 5**
+
+### *January 29, 2020*
+
+
+---1. What is a compound assignment operator? How does it work?
+
+compound assignment operators combine any arithmetic operator with
+ the assignment operator. eg. answer+=42
+ to add 42 to answer, you can write it using the operator '+='
+answer += 42;
+The += operator also works on strings; it appends one string to
+ the end of another.
+ 
+--2. List all the compound assignment operators.
+
+Don’t write this                   Write this
+variable = variable * number;     variable *= number;
+variable = variable / number;     variable /= number;
+variable = variable % number;     variable %= number;
+variable = variable + number;     variable += number;
+variable = variable - number;     variable -= number;
+
+--3. List two ways to increment a numeric variable by 5. List two ways
+ to decrement a numeric variable by 50.
+ 
+ Use the increment (++) and decrement (--) operators instead of a compound 
+ assignment operator when incrementing or decrementing a variable. 
+ For example, replace
+count += 5;
+with
+count++;
+
+--4. How long does a while loop run?
+
+until the limit set by the programmer.
+
+--5. What is an iteratiion variable? (Not in book)
+
+Each time we execute the body of the loop, we call it an iteration.
+We call the variable that changes each time the loop executes and controls
+ when the loop finishes the iteration variable. If there is no iteration
+ variable, the loop will repeat forever, resulting in an infinite loop.
+ 
+--6. What happens if you don't change the loop variable in the body of
+ the while loop block?
+ 
+ it runs forever
+ 
+--7. How many parts does a for loop statement have? Can you omit any
+of them? Can you omit all of them? What happens if you omit all of them?
+
+The For-EndFor Statement Structure Similar to a While loop,
+ a For loop consists of three parts: 
+the keyword For that starts the loop,
+ the condition being tested, and
+ the EndFor keyword that terminates the loop.
+ no.
+ it wont run.
+ 
+--8. How do you guarantee that a loop runs at least once?
+
+A do.. while loop is almost the same as a while loop except that the loop
+ body is guaranteed to execute at least once. A while loop says "Loop while
+ the condition is true, and execute this block of code", a do.. while loop 
+ says "Execute this block of code, and then continue to loop while the 
+ condition is true".
+ 
+--9. What does the break statement do?
+
+When a break statement is encountered inside a loop, the loop is immediately
+terminated and the program control resumes at the next statement following 
+the loop. It can be used to terminate a case in the switch statement.
+
+--10. What does the continue statement do?
+
+The continue statement is used inside loops. When a continue statement is
+ encountered inside a loop, control jumps to the beginning of the loop for
+ next iteration, skipping the execution of statements inside the body of 
+ loop for the current iteration.
+ 
+--11. (Thought question) Can you think of any reason why you would want
+ to have an innite loop? An
+\i nnite loop" is a loop without an update variable that in eect
+ runs forever. As you will see, these kinds of loops are written
+ intentionally to perform various kinds of tasks.

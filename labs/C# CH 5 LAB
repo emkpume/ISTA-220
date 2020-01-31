@@ -1,0 +1,71 @@
+using System;
+using System.Numerics;
+
+namespace ConsoleApp25
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 0; i < 1000; i++)
+            {
+                Console.WriteLine($"{i}: {Fib(i)}");
+            }
+
+            Console.WriteLine(Fib(1)); // 1
+            Console.WriteLine(Fib(5)); // 5
+            Console.WriteLine(Fib(6)); // 8
+            // InfiniteLoops();
+        }
+
+        static BigInteger Fib(int n)
+        {
+            BigInteger b = 1;
+            BigInteger a = 0;
+
+            for (int i = 0; i < n; i++)
+            {
+                checked
+                {
+                    var newB = a + b;
+
+                    a = b;
+                    b = newB;
+                }
+            }
+
+            return a;
+        }
+
+        static int Fib_recursive(int n, int a = 0, int b = 1)
+        {
+            if (n <= 0) return a;
+
+            return Fib_recursive(n - 1, b, a + b);
+        }
+
+        static void InfiniteLoops()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("NOT INFINITE");
+            }
+
+            // Infinite
+            for (int i = 0; ; ++i)
+            {
+                Console.WriteLine(i);
+            }
+
+            do
+            {
+                Console.WriteLine("INFINITE");
+            } while (true);
+
+            while (true)
+            {
+                Console.WriteLine("INFINITE");
+            }
+        }
+    }
+}
