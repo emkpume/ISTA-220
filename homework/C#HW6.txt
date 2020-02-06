@@ -1,0 +1,62 @@
+# *Emeka Mkpume*
+
+## *C# HW 6**
+
+### *January 30, 2020*
+
+1. What is an exception?
+
+An exception is a problem that arises during the execution of a program.
+C# exception handling is built upon four keywords: try, catch, finally,
+ and throw.
+ 
+2. What happens in a try block if the program executes without errors?
+
+When the code runs, it attempts to execute all the statements in the
+ try block, and if none of the statements generates an exception,
+they all run, one after the other, to completion.
+
+3. How does the catch mechanism work for unhandled exceptions?
+
+The int.Parse statement would throw an Overfl owException,
+which will not be caught by the FormatException catch handler.
+ If this occurs and the try block is part of a method, the method
+ immediately exits and execution returns to the calling method.
+ If the calling method uses a try block, the runtime attempts to
+ locate and execute a matching catch handler for this try block. If the
+ calling method does not use a try block or if there is no matching catch
+ handler, the calling method immediately exits, and execution returns to
+ its caller, where the process is repeated.
+
+4. What happens in a program if an exception block fails to handle an
+ particular error?
+ 
+ If your catch block throws an exception and there are no other catch 
+ blocks to handle it besides the one that caused it, it will continue 
+ to get re thrown then 'Windows handles it'. If a exception occurs the
+ CLR traverses up the call stack looking for a matching catch expression.
+ 
+5. What is the parent class for all exceptions? How does this work?
+
+The parent class of all the exception classes is the java. lang. 
+Exception class,
+
+6. How do you determine the type of an error?
+7. What is the purpose of integer checking?
+8. What is the range of values than a signed Int32 type can contain? 
+State the lowest value and the
+highest value.
+9. What is the range of values than an unsigned Int32 type can contain?
+ State the lowest value and the
+highest value. What is the dierence between a signed integer and an
+ unsigned integer? Can signed
+integers and unsigned integers represent the same amount of numbers?
+10. What does the nally block do?
+
+Java finally block is a block that is used to execute important code such
+ as closing connection, stream etc. Java finally block is always executed
+ whether exception is handled or not. Java finally block follows try or
+ catch block.
+ 
+11. (Thought question) When would you not use a nally block in a
+ try/catch construction?

@@ -1,0 +1,89 @@
+# *Emeka Mkpume*
+
+## *C# HW chapter 7*
+
+### *February 5, 2020*
+
+1. What is a class? According to the book, what does a class “arrange?”
+
+A class is a type while a namespace is a container for a code.
+Classes provide a convenient mechanism for modeling the entities manipulated
+ by applications. An entity can represent aspecific item, such as a customer, 
+ or something more abstract, such as a transaction. e.g consol, exceptions etc.
+ When you design a class, you systematically arrange
+information and behavior into a meaningful entity.
+
+2. What are the two purposes of encapsulatiohn?
+
+Encapsulation simply means  information hidding. there are 2 main purposes of encapsulation.
+a. To combine methods and data within a class; in other words, to support classification
+b.To control the accessibility of the methods and data; in other words, to control the use of
+the class
+e.g.For example, Math.pi, Math.sqrt, int, etc.
+when you call the Console.WriteLine method, you don’t want to be bothered with all the intricate
+details of how the Console class physically arranges for data to be written to the screen
+
+3. How do you instantiate an instance of a class? How do you access that instance?
+
+use the new keyword to create an object.
+Create an instance of that class with the 'new' keyword in your main activity and then
+ invoke those methods on that object
+
+4. What is the default access of the fields and methods of a class? How do you change the default?
+
+private. change the private by making it public.
+default is a keyword that is used as an access modifier for methods and variables.
+ Using this access modifier will make your class, variable, method or constructor acessible from
+ own class or package, it will be also is set if no access modifier is present
+ 
+5. What is the syntax for writing a constructor?
+
+Constructor(s) of a class must has same name as the class name in which it resides.
+
+6. What is the difference between class fields and methods, and instance fields ad methods? 
+How do you create class fields and methods?
+
+An instance field is the same as a class field, but is non static and can be different for each
+ instance of the object. And a local variable is a variable inside a method or block, that can
+ only be used by that method or block. ... An input parameter is what is passed into a method.
+ 
+7. How do you bring a static class in scope? Why would you want to bring a static class in scope?
+
+A static class is basically the same as a non-static class, but there is one difference:
+ a static class cannot be instantiated. In other words, you cannot use the new operator to
+ create a variable of the class type. Because there is no instance variable, you access the
+ members of a static class by using the class name itself.
+ 
+8. Can you think of a good reason to create an anonymous class? What is it?
+
+Anonymous classes let you write small code and let you declare and instantiate class at the same
+ time. These classes do not have names, it is used when you want to use any class only once
+ 
+9. What is polymorphism as this term is used in computer science? This is not in the book.
+
+In computer science, polymorphism refers to the ability of a programming language to interpret
+ objects in different ways based on their class or data type. In essence, it is the ability of
+ a single method to be applied to derived classes and achieve a proper output.
+ 
+10. What is message passing as this term is used in computer science? This is not in the book.
+
+In computer science, message passing is a technique for invoking behavior (i.e., running a program)
+ on a computer. The invoking program sends a message to a process (which may be an actor or object) 
+ and relies on that process and its supporting infrastructure to select and then run the code it selects.
+ 
+11. What was the first object-oriented programming language?
+
+Simula (1967) is generally accepted as being the first language with the primary features of an 
+object-oriented language. It was created for making simulation programs, in which what came to be
+ called objects were the most important information representation.
+ 
+12. Consider this quote by Alexander Stepanov:
+I find OOP technically unsound. It attempts to decompose the world in terms of interfaces
+that vary on a single type. To deal with the real problems you need multisorted algebras
+— families of interfaces that span multiple types. I find OOP philosophically unsound. It
+claims that everything is an object. Even if it is true it is not very interesting — saying that
+everything is an object is saying nothing at all.
+Who is Alexander Stephanov? What do you think about this quote?
+
+
+

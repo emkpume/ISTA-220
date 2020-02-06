@@ -1,0 +1,87 @@
+
+
+# **Name : Emeka Mkpume**
+
+## **Files: C# HW 3**
+
+### **Date: January 23, 2020**
+
+1. What is a method ?
+
+A method is a name of block code that accepts values from outside and returns values to the outside.
+A method is a code block that contains a series of statements.
+A method is a named sequence of statements. if you have previously programmed by using a
+ language such as C, C++, or microsoft Visual Basic,
+you will see that a method is similar to a function or a subroutine. 
+a method has a name and a body.
+
+2. (\Not in Book) what is the difference between a function and a 
+procedure/subprocedure/subroutine ?
+
+The function must return a value but in Stored Procedure it is optional.
+ Even a procedure can return zero or n values. Functions can have only input
+ parameters for it whereas Procedures can have input or output parameters.
+ Functions can be called from Procedure whereas Procedures cannot be called 
+ from a Function. Visual Basic statements are grouped in a block enclosed by Sub ,
+ Function and matching End statements. The difference between the two is that functions
+ return values, procedures do not. A procedure and function is a piece of code in a larger program.
+ 
+
+3. What does a return statement do ?
+
+ A return statement consists of the keyword return followed by an expression that speciﬁes the
+ returned value and a semicolon. The type of the expression must be the same as the type speciﬁed
+ by the method declaration. 
+ It terminates the execution of a method. or terminates that block of code.
+
+4. What is an expression bodied method ?
+
+The main differences are the use of the => operator to reference the expression that forms the body 
+of the method and the absence of a return statement. The value of the expression is used as the return value; 
+if the expression does not return a value, then the method is void.
+
+5. What is the scope of a variable ?
+
+When a variable can be accessed at a particular location in a program, the variable is said to be
+ in scope at that location. The calculatedValue variable has method scope; it can be accessed throughout
+ the calculateClick method but not outside that method.
+ The scope of a variable is simply the region of the program in which that variable is usable. 
+ The scope of local variables means that you cannot use them to share information between  methods.
+
+6. What is an overloaded method ?
+
+If two identiﬁers have the same name and are declared in the same scope, they are said to be overloaded. 
+Often an overloaded identiﬁer is a bug that is trapped as a compile-time error. For example, 
+if you declare two local variables with the same name in the same method, the compiler reports an error. 
+
+7. How do you call a method that requirements arguments?
+
+Arguments to method calls are usually passed by value, which means the value of the argument expression is copied into the target
+ parameter.
+
+8. How do you write a method, that is, specify the method definition, that requires a parameter list ?
+
+To use a method, you need to define the method and call the method.
+
+9. How do you specify a parameter as optional when defining a method ?
+
+As the name suggests optional parameters are not compulsory parameters, they are optional. It helps to exclude arguments for some 
+parameters. Or we can say in optional parameters, it is not necessary to pass all the parameters in the method.
+
+10. How do you pass a argument to a method as named parameter ?
+
+The definition of a method, constructor, indexer, or delegate can specify that its parameters are required or that they are optional.
+ Any call must provide arguments for all required parameters, but can omit arguments for optional parameters
+
+11. How do you return values from a method ? can you return multiple values from a method, and if so how ?
+
+You declare a method's return type in its method declaration. Within the body of the method, you use the return statement to return the
+ value. Any method declared void doesn't return a value and cannot contain a return statement. Any method that is not declared void must 
+ contain a return statement.
+In C or C++, we cannot return multiple values from a function directly. 
+
+12. How does the compiler resolve an ambiguity between named arguments and optional parameters ?
+
+using optional parameters and name arguments can result in some possible ambiguities in your code. you need to understand how the computer
+resolves these ambiguities; otherwise, you might find your applications behaving in unexpected ways. Suppose that you define the optMethod
+method as an overloaded method.

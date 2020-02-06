@@ -1,0 +1,92 @@
+# *Emeka Mkpume*
+
+## *C# HW chapter 8*
+
+### *February 6, 2020
+
+1. When using INSERT, is the list of columns necessary? Why or why not?
+
+Use the INSERT statement is to add rows to a SQL Server data table.
+You can insert rows into a table without providing a column list, but this
+ has no valid use at all. As a rule, you should avoid all temptation to make
+ your SQL code shorter by leaving things out. There are always exceptions to 
+ every rule, of course, but the INSERT column list is so essential that I’d 
+ advise you to stop the build if SQL Prompt (BP004), or whatever static
+ code-analysis tool you use, detects such a crime.
+ note: Many production databases have failed embarrassingly as a result of
+ INSERT code that omits a column list, usually in mysterious ways and often 
+ without generating errors.
+
+2. When using INSERT SELECT, do you use a subquery (derived table)? Under what
+ circumstances do you not use a subquery?
+ 
+ Subqueries can be used with the SELECT, INSERT, UPDATE, and DELETE statements
+ along with the operators like =, <, >, >=, <=, IN, BETWEEN, etc.
+ 
+3. What is the operand for the INSERT EXEC statement?
+
+while INSERT EXEC is a great way to quickly import data into a temp table, there
+are a few problem with it.
+*****INSERT EXEC cannot be nested
+*****INSERT EXEC cannot be used inside of a function
+*****INSERT EXEC must match the table exactly
+
+4. How would you use the INSERT INTO statement?
+
+The INSERT INTO statement is used to add new data to a database. The INSERT INTO 
+statement adds a new record to a table. INSERT INTO can contain values for some or
+all of its columns.
+The general syntax is:
+INSERT INTO table-name (column-names)
+SELECT column-names.
+FROM table-name.
+WHERE condition.
+
+5. What are the parameters to the BULK INSERT statement?
+
+BULK INSERT enforces strict data validation and data checks of data read from a
+ file that could cause existing scripts to fail when they are executed on invalid
+ data. For example, BULK INSERT verifies that:
+The native representations of float or real data types are valid.
+Unicode data has an even-byte length.
+
+6. Does IDENTITY guarantee uniqueness? If not, how do you guarantee uniqueness?
+
+Identity columns can be used for generating key values. The identity property on
+ a column guarantees the following:
+Each new value is generated based on the current seed & increment.
+Each new value for a particular transaction is different from other concurrent
+ transactions on the table.
+ 
+7. How do you create a SEQUENCE object?
+
+ To create a new sequence object, you use the CREATE SEQUENCE statement.
+ A sequence is a user-defined schema bound object that generates a sequence of 
+ numeric values according to the specification with which the sequence was created.
+ 
+8. How do you use a SEQUENCE object?
+
+Sequence objects are similar to the IDENTITY column in any SQL table.
+However, unlike the IDENTITY column, they are independent and are not attached to
+any table. Sequence objects are used both independently and within the DML 
+statements i.e. INSERT, UPDATE and DELETE.
+
+9. How do you alter a SEQUENCE object?
+
+ALTER SEQUENCE is used to specify a new starting value of an existing sequence. 
+Future values of the sequence will not be less than the value specified. This 
+operation can not be rolled back and its effects are instantly visible to all 
+other transactions.
+
+10. What is the difference between DELETE and TRUNCATE?
+
+DROP and TRUNCATE are DDL commands, whereas DELETE is a DML command. Therefore 
+DELETE operations can be rolled back (undone), while DROP and TRUNCATE operations
+ cannot be rolled back.
+ 
+11. What is the difference between DELETE and DROP TABLE?
+
+DROP table query removes one or more table definitions and all data, indexes, 
+triggers, constraints, and permission specifications for those tables. DROP
+command requires ALTER permission on the schema to which the table belongs,
+CONTROL permission on the table, or membership in the db_ddladmin fixed database role.

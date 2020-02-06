@@ -1,0 +1,71 @@
+# *Emeka Mkpume*
+
+## *C# HW chapter 8*
+
+### *February 6, 2020
+
+1. What is the difference between deep copy and shallow copy?
+
+Shallow Copy and Deep Copy in C# In general, when we try to copy one
+ object to another object, both the objects will share the same memory 
+ address. ... Shallow Copy: Creating a new object and then copying the
+ value type fields of the current object to the new object.
+ 
+2. What is the value of a reference after you declare and initialize it?
+ 
+ reference type stores the address of the location where the actual value is 
+ stored instead of value itself.
+ 
+3. How do you declare a value type?
+
+by indicating the kind of values it is going to store such as integer, float,
+decimal
+4. How do you declare a reference type?
+
+by using the new keyword IOT allocate memory in the heap. class interface,
+dynamic, object, string, or delegate.
+
+5. Does C# allow you to assign NULL to a value type?
+
+No. In C#, you can only assign the null value to a reference type. the null values simply
+means that the variable does not refer to an object in memory.
+
+6. Can you assign a nullable value type to a non-nullable variable of the same type? Why or why not?
+
+no you cant. you can never assign a nullable type to a value type.
+
+7. What is the difference between the stack and the heap?
+
+object allocated on the stack are available only inside of a stack frame (execustion of a method)
+while objects allocated on the heap can be accessed from anywhere. Stack is used for static memory
+allocation and HEAP for dynamic memory allocation, both served in the computer's RAM.
+
+8. What does it mean when we say that all classes are specialized types?
+
+With specialization we nominate a subset of the objects in a type as a subtype. 
+The objects in the subset are chosen such that they have "something in common". 
+Typically, the objects in the subset are constrained in a certain way that set 
+them apart from the surrounding set of objects.
+
+9. What does ref do?
+
+if you prefix a parameter wit the ref keyword, the C# compiler generates code that passes a reference
+to the actual argument rather than a copy of the argument. when using a ref parameter, anything you do 
+to the parameter you also do to the original argument because the parameter and the argument both
+reference the same object.
+
+10. What does out do? 
+
+you can prefix a parameter with the out keyword so that the parameter becomes an alias for the argument.
+as when using ref, anything you do to the parameter, you also do to the original argument. when you passes
+an argument to an out parameter, you must also prefix the argument with the out keyword.
+
+11. Describe boxing and unboxing in your own words.
+
+boxing is where you convert a value type(char, int) to a reference type (Object).
+unboxing is the process of converting reference type into the value type.
+
+12. What does cast do?
+
+to obtain the value of the boxed copy, you must use what is known as a cast. this is an operation that 
+checks whether converting an item of one type to another is safe before actually making the copy.

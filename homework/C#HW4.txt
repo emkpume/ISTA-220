@@ -1,0 +1,91 @@
+
+# **Name : Emeka Mkpume**
+
+## **Files: C# HW 4**
+
+### **Date: January 25, 2020**
+
+1. What are the possible values of a Boolean expression ?
+
+A Boolean expression always evaluates to true or false.
+Visual C# provides a data type called bool. 
+A bool variable can hold one of two values: true or false
+ 
+2. List eight Boolean operators.
+
+A Boolean operator is an operator that performs a calculation whose result is
+ either true or false. C# has several very useful Boolean operators, the
+ simplest of which is the NOT operator, represented by the exclamation point
+ (!). The ! operator negates a Boolean value, yielding the opposite of that
+ value.
+ operator meaning
+ ==       equal to
+ !=       non equal to
+ <        less than
+ <=       less than or equal to
+ >        greater than
+ >=       greater than or equal to
+ &&        CONDITIONAL AND 
+ ||       CONDITIONAL OR
+ NOTE: && AND || are known as conditional logical operators.
+
+3. What is the general concept of short circuiting ? This question has a 
+short and simple answer and do not need to have a detailed response.
+
+The && and || operators both exhibit a feature called short-circuiting. 
+This is when the whole expression can be evaluated to true or false
+ without evaluating all sub expressions.
+ 
+4. what are the difference in how short circuiting works for && and || ?
+
+if the left operand of the && operator evaluates to false, the result of
+ the entire expression must be false regardless of the value of the right 
+ operand. Similarly, if the value of the left operand of the || operator 
+ evaluates to true, the result of the entire expression must be true, 
+ irrespective of the value of the right operand.
+ 
+5. Look at the list of operators. What operator has the highest precedence ? 
+which has the lowest ?
+
+When a complex expression has multiple operators, operator precedence determines
+the sequence of operations. The order of execution can significantly affect
+ the resulting value. 
+ ~ (Bitwise NOT)IS HIGHEST
+ = (assignmnet) is LOWEST
+ 
+6. In an if or else construction using multiple lines of code, what effect does
+ the use of curly braces have ?
+ 
+ Use of Curly Braces {}:  Curly braces is used to group a set of statement
+ and deceleration. We use them along with loops and conditional statements
+ in order to avoid confusion and to define a clear scope. And it follows a
+ rule every opening brace must have a closing brace in order to define a 
+ clear boundary.
+ 
+ 
+7. In a switch statement, what happens if you omt break ?
+
+Without break, the program continues to the next case, executing the statements 
+until a break or the end of the statement is reached.
+
+8. (not in book) What is a recursive method ? Uisng alanguage you know (such
+ as english) write a recursive method that adds up the integers in a list of integers.
+ The input to the methods is a list of integers and the output is a scaler value
+ representing a sum.
+ 
+ A method that calls itself is known as a recursive method. And, this technique
+is known as recursion. A physical world example would be to place two 
+parallel mirrors facing each other. Any object in between them would be
+ reflected recursively.
+ 
+9. (not in book) Read a short summary of De Morgan's Laws.
+	(a) Explain how this statement, :It's not snowing or raining," is the 
+	same as this statement, "Its not snowing and it's not raining."
+	(b) Explain how this statement,I'm not running and walking." is the same
+	as this statement, "I'm not running or I'm not walking." 
+	
+	De Morgan's Laws describe how mathematical statements and concepts 
+	are related through their opposites. In set theory, De Morgan's Laws 
+	relate the intersection and union of sets through complements. 
+	In propositional logic, De Morgan's Laws relate conjunctions and 
+	disjunctions of propositions through negation.

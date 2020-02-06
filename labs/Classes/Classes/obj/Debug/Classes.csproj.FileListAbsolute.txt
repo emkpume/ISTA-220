@@ -1,0 +1,6 @@
+C:\Users\christy\Desktop\MSSA\CS\labs\Classes\Classes\bin\Debug\Classes.exe.config
+C:\Users\christy\Desktop\MSSA\CS\labs\Classes\Classes\bin\Debug\Classes.exe
+C:\Users\christy\Desktop\MSSA\CS\labs\Classes\Classes\bin\Debug\Classes.pdb
+C:\Users\christy\Desktop\MSSA\CS\labs\Classes\Classes\obj\Debug\Classes.csprojAssemblyReference.cache
+C:\Users\christy\Desktop\MSSA\CS\labs\Classes\Classes\obj\Debug\Classes.exe
+C:\Users\christy\Desktop\MSSA\CS\labs\Classes\Classes\obj\Debug\Classes.pdb

@@ -1,0 +1,150 @@
+using System;
+
+namespace ConsoleApp26
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int input = ElicitValidIntegerInputFromUser();
+
+            Console.WriteLine(input);
+        }
+
+        private static int ElicitValidIntegerInputFromUser()
+        {
+            bool validInput = false;
+            int input = 0;
+
+            do
+            {
+                Console.Write("Type a valid integer: ");
+
+                try
+                {
+                    input = int.Parse(Console.ReadLine());
+                    validInput = true;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Invalid integer.");
+                }
+                finally
+                {
+                    Console.WriteLine("This always runs!");
+                }
+            } while (!validInput);
+
+            return input;
+        }
+
+        private static void Basic_Exception_Practice()
+        {
+            try
+            {
+                int.Parse("cat");
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("A format exception was thrown.");
+                Console.WriteLine(ex);
+
+                // Rethrow, to signify we have caught but not handled the exception
+                throw ex;
+            }
+        }
+
+        private static void HandleSwitchStatement()
+        {
+            Console.WriteLine("a - Item 1");
+            Console.WriteLine("b - Item 2");
+            Console.WriteLine("c - Item 3");
+            Console.WriteLine("d - Item 4");
+            Console.WriteLine("e - Item 5");
+
+            char choice = Console.ReadKey().KeyChar;
+            Console.WriteLine();
+
+            switch (choice)
+            {
+                case 'a':
+                    Console.WriteLine("Handle menu option 'a'");
+                    break;
+                case 'b':
+                    Console.WriteLine("Handle menu option 'b'");
+                    break;
+                case 'c':
+                    Console.WriteLine("Handle menu option 'c'");
+                    break;
+                case 'd':
+                    Console.WriteLine("Handle menu option 'd'");
+                    break;
+                case 'e':
+                    Console.WriteLine("Handle menu option 'e'");
+                    break;
+                default:
+                    Console.WriteLine("Invalid menu option");
+                    break;
+            }
+        }
+
+        private static void IfThenElse_Practice()
+        {
+            Console.Write("Input an integer to be told whether it is odd or even: ");
+            int input = int.Parse(Console.ReadLine());
+
+            if (input < 0)
+            {
+                Console.WriteLine("Value was too low...");
+            }
+            else if (input >= 10)
+            {
+                Console.WriteLine("Value was too high...");
+            }
+            else if (input % 2 == 0)
+            {
+                PrintEvenMessage();
+            }
+            else
+            {
+                PrintOddMessage();
+            }
+
+            // Same as:
+
+            //if (input >= 0 && input < 10)
+            //{
+            //    if (input % 2 == 0)
+            //    {
+            //        PrintEvenMessage();
+            //    }
+            //    else
+            //    {
+            //        PrintOddMessage();
+            //    }
+            //}
+            //else if (input < 0)
+            //{
+            //    Console.WriteLine("Value was too low...");
+            //}
+            //else if (input >= 10)
+            //{
+            //    Console.WriteLine("Value was too high...");
+            //}
+            //else
+            //{
+            //    throw new NotImplementedException();
+            //}
+        }
+
+        private static void PrintOddMessage()
+        {
+            Console.WriteLine("Odd!");
+        }
+
+        private static void PrintEvenMessage()
+        {
+            Console.WriteLine("Even!");
+        }
+    }
+}
