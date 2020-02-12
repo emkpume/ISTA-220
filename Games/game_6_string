@@ -1,0 +1,46 @@
+using System;
+
+namespace ConsoleApp15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] number = new int[7];
+            number[1] = 59;
+            number[2] = 55;
+            number[3] = 32;
+            number[4] = 31;
+            number[5] = 7;
+            number[6] = 2;
+            number[0] = 1;
+            {
+                // Console.WriteLine(number[3]);
+                //to find out the length of the number array, i will attach the word length to it
+                Console.WriteLine(number.Length);
+                Console.ReadLine();
+
+                // short cut to do the above example.
+
+                //int[] number = new int[] { 59, 55, 32, 31, 7, 2, 1 };
+                string[] names = new string[] { "emeka, head and provider", "peace is the wife of emeka", "ephraim is our newest baby", "tiffany is still in the womb", "kanu lives with his mom in florida", "ada is 8 and she lives with her mother" };
+                // for (int i = 0; i < names.Length; i++)
+                foreach (string name in names)
+                {
+                    Console.WriteLine(name);
+                    Console.ReadLine();
+                }
+                {
+                    //Console.WriteLine(names[i]);
+                    // Console.ReadLine();
+
+                }
+
+
+            }
+
+
+        }
+    }
+}

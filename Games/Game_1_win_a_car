@@ -1,0 +1,42 @@
+using System;
+
+namespace ConsoleApp14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Emeka's Big giveaway Game:");
+            Console.WriteLine("Choose a Number to play this Game:1,2,3,4, or 5");
+            string userValue = Console.ReadLine();
+            string message = "";
+            if (userValue == "1")
+                message = "You have just won a brand new car!";
+            else if (userValue == "2")
+             message = "You have just won a Jet !";
+            else if (userValue == "3")
+            message = "You have just won a Bike !";
+            else if (userValue == "4")
+             message = "You have just won a Truck !";
+            else if (userValue == "5")
+          message = "You have just won a skateboard !";
+            else
+            {
+               message = "Sorry Please Try again Later !";
+            }
+            Console.WriteLine(message);
+            Console.ReadLine(); 
+            /* OR
+            Console.WriteLine("Emeka's Big giveaway Game:");
+            Console.WriteLine("Choose a Number to play this Game:1,2,3,4, or 5");
+            string userValue = Console.ReadLine();
+            string message = (userValue == "1") ? "Boat" : "Please try again Later";
+            Console.WriteLine("You won a ");
+            Console.WriteLine(message);
+            Console.WriteLine(",");
+            Console.WriteLine();
+            */
+        }
+
+    }
+}

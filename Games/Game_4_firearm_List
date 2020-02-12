@@ -1,0 +1,34 @@
+using System;
+
+namespace ConsoleApp14
+{
+    class firearm
+    {
+        
+        string name;
+        string what;
+        public firearm(string n, string m)
+        {
+            name = n;
+            what = m;
+        }
+        public void speak()
+        {
+            Console.WriteLine($"i am a {name} and i go {what}");
+        }
+        class program
+        {
+            static void Main(string[] args)
+            {
+                Console.WriteLine("This is Test 04");
+                firearm shotgun = new firearm("shotgun", "boom");
+                shotgun.speak();
+                firearm rifle = new firearm("rifle", "bang");
+                rifle.speak();
+                firearm pistol = new firearm("pistol", "pop");
+                pistol.speak();
+            }
+        }
+
+    }
+}
