@@ -1,0 +1,74 @@
+namespace Parameters
+{
+    class WrappedInt
+    {   
+        public int Number = 2020;
+        
+    }
+}
+--
+#region using directives
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+#endregion
+
+namespace Parameters
+{
+    class Program
+    {
+        static void doWork()
+        {
+            int i = 79;
+            Console.WriteLine(i);
+            Pass.Value(i);
+            Console.WriteLine(i);
+            Console.WriteLine("...........,,,,,,..");
+            WrappedInt wi = new WrappedInt();
+            Console.WriteLine(wi.Number);
+            Pass.Reference(wi);
+            Console.WriteLine(wi.Number);
+            Console.WriteLine("...........,,,,,,..");
+            int j = 1775;
+            Console.WriteLine(j);
+            Pass.value2(ref j);
+            Console.WriteLine(j);
+        }
+
+        static void Main(string[] args)
+        {
+            try
+            {
+                doWork();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+}
+--
+using System;
+
+namespace Parameters
+{
+    class Pass
+    {
+        public static void Value(int param)
+        {
+            param = 42;
+            Console.WriteLine($"(i is now {param} in value() method)");
+        }
+        public static void Reference(WrappedInt param)
+        {
+            param.Number = 42;
+        }
+        public static void value2(ref int param)
+        {
+            param = 42;
+        }
+    }
+}
