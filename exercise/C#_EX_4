@@ -1,0 +1,65 @@
+#region using directives
+
+using Ex_04_Animal_Farm;
+
+using System;
+
+#endregion
+
+namespace Ex_04_Animal_Farm
+{
+    public class Farm
+     {
+
+        //string name;
+
+        //string breed;
+
+        //string sound;
+
+        //int limbs;
+
+        //string coat;
+
+        //string product;
+
+        public Farm(string name, string breed, string sound, string limbs, string coat, string product)
+
+        {
+            Console.WriteLine("This is a fun animal farm");
+
+            Console.WriteLine($"My name is {name} and I am a {breed}");
+
+            Console.WriteLine($"I go {sound}");
+
+            Console.WriteLine($"I have {limbs} legs and {coat} ");
+
+            Console.WriteLine($"Sometimes they make {product} out of me" + "\r\n");
+        }
+
+    }
+
+}
+
+class program
+{
+    static void Main() // main method
+
+    {
+        Farm Animal1 = new Farm("star", "Owl", "hoot", "2", "feathers", "dreamcatchers");
+
+        // declare new animal
+        Farm Animal2 = new Farm("ziggy", "Pig", "oink", "4", "skin", "bacon");
+         // declare new animal
+
+        Farm Animal3 = new Farm("mana", "goose", "honk", "2", "feathers", "comforters");
+        //declare new animal
+
+        Farm Animal4 = new Farm("jack", "Horse", "neigh", "4", "hair", "wigs");
+
+         // declare new animal
+
+        Farm Animal5 = new Farm("moon", "calf", "moo", "4", "short hair", "veal");
+
+    }
+}
