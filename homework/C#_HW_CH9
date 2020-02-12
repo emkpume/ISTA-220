@@ -1,0 +1,101 @@
+# *Emeka Mkpume
+
+## C# HW chapter 9
+
+### February 12, 2020
+
+******note*****
+C# supports two kinds of value types: enumerations and structures.
+
+1. What is an enum?
+
+You can create an enumeration (sometimes called an enum type)
+whose values are limited to a set of symbolic names.
+You define an enumeration by using the enum keyword, followed by a set of symbols identifying the
+legal values that the type can have, enclosing them between braces.
+e.g. an enumeration named Season whose literal values are limited to the symbolic names
+ Spring, Summer, Fall, and Winter:
+enum Season { Spring, Summer, Fall, Winter }
+
+2. Declare an enum for military ranks, either officer or enlisted. 
+Name it Ranks. What are the symbols,
+like Private, Corporal, Sergeant or Lieutenant, Captain, Major?
+
+enum Rank { Private, Corporal, Sergeant, Lieutenant, Captain, Major,  General }
+
+class Example
+{
+public void Method(Private, Corporal, Sergeant, Lieutenant, Captain, Major,  General )
+{
+Rank localVariable; 
+...
+}
+private Season Rank; 
+}
+
+
+3. Using the Ranks enum, assign a rank to yourself and a friend.
+
+Rank Military = Rank.Specialist;
+Console.WriteLine(Military); // writes out 'Specialist'
+
+4. Determine the numeric index of particular ranks, using the Ranks enum.
+5. How do you select the type of an enum?
+
+6. What is a struct?
+
+A structure is a value type.
+In C#, a structure is a value type data type. It helps you to make a single
+variable hold related data of various data types. The struct keyword is used
+for creating a structure. Structures are used to represent a record.
+
+7. List some differences between classes and structs.
+
+a.) A structure is a value type while a class is a reference type.
+b.) In a class, you can initialize instance fields at their point of declaration.
+In a structure, you cannot.
+c.) Structure instances are called values and live on the stack while Class instances
+are called objects and live on the heap
+
+8. Are structs stored on the stack or on the heap? What about enums?
+
+Structure instances are called values and live on the stack.
+9. Review the documentation for the C# System.Int32 struct. List the fields.
+ List the methods.
+ 
+10. Declare a struct named DOD with four branches.
+
+Write the keyword struct, followed by the name of the structure type, followed by
+the body of the structure (the constructors, methods, and fi elds). For example:
+struct DOD
+{
+public DOD(string Army, string Navy, string Marine, string Airforce)
+{ ... }
+...
+private string Army, string Navy, string Marine, string Airforce;
+}
+
+11. Why can’t you create a default constructor for a struct?
+
+The reason you can’t declare your own default constructor for a structure is that
+the compiler always generates one. In a class, the compiler generates the default
+constructor only if you don’t write a constructor yourself. The compiler-generated
+default constructor for a structure always sets the fi elds to 0, false, or null—just
+as for a class.
+
+12. What is CIL? What does the CLR do to the CIL?
+
+All C# applications execute by using the common language runtime (CLR) of the 
+.NET Frame-work.  C# programs are frequently referred to as managed code.
+CIL : Common Intermediate Language
+CLR: common language runtime
+The CLR is responsible for providing a safe and secure environment for your application
+code in the form of a virtual machine. 
+When you compile a C# application, the compiler converts your C# code into a set of
+instructions using a pseudo-machine code called the Common Intermediate Language (CIL). 
+These are the instructions that are stored in an assembly. When you run a C# application,
+the CLR takes responsibility for converting the CIL instructions into real machine 
+instructions that the processor on your computer can understand and execute. 
+This whole environment is known as the managed execution environment, and C# 
+programs are frequently referred to as managed code.
+
